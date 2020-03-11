@@ -2,7 +2,7 @@
 environment                     =   	"virginia"
 
 
-s3_bucket                       =	"terraform-class-olga321"
+s3_bucket                       =	"terrraform-class-olga321"
 s3_folder_region                =	"us-east-1"
 region                          =   "us-east-1"
 
