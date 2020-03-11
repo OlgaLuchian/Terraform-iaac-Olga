@@ -1,10 +1,10 @@
 # Provide a region for VPC
-environment                     =   	"virginia"
+environment                     =   	"oregon"
 
 
 s3_bucket                       =	"terraform-class-olga321"
 s3_folder_region                =	"us-east-1"
-region                          =   "us-east-1"
+region                          =   "us-west-2"
 
 # This is used for VPC CIDR BLOCK
 cidr_block = "10.0.0.0/16"
