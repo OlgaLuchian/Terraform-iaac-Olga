@@ -1,7 +1,4 @@
-terraform {
-  backend "s3" {
-    bucket = "terraform-class-olga321"
-    module "dev" {
+module "dev" {
   source  = "./module"
   cidr_block1_public = "${var.cidr_block1_public}"
   cidr_block2_public = "${var.cidr_block2_public}"
