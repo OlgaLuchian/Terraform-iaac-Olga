@@ -1,4 +1,4 @@
-git clone https://github.com/bekxso/terraform-iaac-Olga
+git clone https://github.com/OlgaLuchian/terraform-iaac-Olga
 
 cd terraform-iaac-Olga/VPC
 
