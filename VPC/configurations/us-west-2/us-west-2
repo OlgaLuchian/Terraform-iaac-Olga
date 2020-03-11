@@ -1,5 +1,5 @@
 # Provide a region for VPC
-environment                     =   	"virginia"
+environment                     =   	"oregon"
 
 
 s3_bucket                       =	"terraform-class-olga321"
