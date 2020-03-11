@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "b" { 
-  bucket = "test-bucket-olga" 
+  bucket = "terraform-class-olga321" 
   acl    = "private" 
 
   tags = { 
