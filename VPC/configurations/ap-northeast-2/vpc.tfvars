@@ -1,6 +1,6 @@
 # Provide a region for VPC
-environment                     =   "ireland"
-region                          =   "eu-west-1"
+environment                     =   "mumbai"
+region                          =   "ap-south-1"
 
 s3_bucket                       =	"terraform-class-olga321"
 s3_folder_region                =	"us-east-1"
