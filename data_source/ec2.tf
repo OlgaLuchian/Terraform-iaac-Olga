@@ -47,11 +47,36 @@ output "AMI_ID" {
   
   }
 
+  resource "aws_key_pair" "provisioner" {
+  key_name   = "provisioner-key"
+  public_key = "${file("~/.ssh/id_rsa.pub")}"
+}
+  
+  
+  
   resource "aws_instance" "web" {
   ami           = "${data.aws_ami.ubuntu.id}"
   instance_type = "t2.micro"
+  key_name      = "${aws_key_pair.provisioner.key_name}"
 
-  tags = {
+  
+  provisioner "file" {
+    source      = "test"
+    destination = "/tmp/"
+
+
+  connection {
+    type     = "ssh"
+    user     = "ubuntu"
+    private_key = "${var.root_password}"
+    host     = "${self.public_ip}"
+         }
+  }
+
+  
+  
+  
+ tags = {
     Name = "HelloWorld"
   }
 }
